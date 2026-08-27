@@ -42,7 +42,7 @@ header {
 .introduction img {
     width: 35%;
     height: auto;
-    margin:7px 0px 10px 3px;
+    margin:10px 0px 3px;
 }
 
 nav {
@@ -76,20 +76,20 @@ nav a, .commercial a, .residential a, .institution a, .history a {
 }
 
 .selections {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
-    padding: 0 0.5vh 0;
+    display:flex;
+    flex-wrap: wrap;
     align-content: center;
-    justify-items: center;
-    margin-bottom: 10px;}
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
 
 .commercial img, .residential img, .institution img {
     width: 390px;
     height: 270px;
-    display:block;
-    margin: 5% auto 15%;
+    margin: 5% 0 15%;
     border-radius: 15px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.733);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.545);
 }
 
 .commercial h3, .residential h3, .institution h3, .history h3{
