@@ -8,7 +8,10 @@
     --body-color: rgb(5, 58, 85);
     --main-page-color: white;
     --font-family: Arial, Helvetica, sans-serif;
-    --navigation-color: black;
+    --navigation-color: white;
+    --links-color: black;
+    --witness-class: rgba(3, 31, 54, 0.653);
+
 }
 
 main {
@@ -25,59 +28,73 @@ body {
 header {
     position: sticky;
     top:0;
-    border-top: 2px solid rgba(0, 0, 0, 0.88);
-    border-bottom: 5px solid rgba(0, 0, 0, 0.376);
+    border-top: 4px solid rgba(3, 65, 157, 0.46);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.376);
 }
 
 .introduction {
     display: grid;
-    grid-template-columns: repeat(2, 35% 65%);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     background-color: var(--main-page-color);
 }
 
 
 .introduction img {
-    padding:0.5vh;
-    width: 30vw;
-    height: 100%;
+    width: 35%;
+    height: auto;
+    margin:7px 0px 10px 3px;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 1.2vw;
-    margin: 1vw;
-    background-color: var(--main-page-color);
+    background-color: var(--navigation-color);
+    padding: 30px;
 }
 
-nav a {
+nav a, .commercial a, .residential a, .institution a, .history a {
     text-decoration: none;
-    color: var(--navigation-color);
+    color: var(--links-color);
+    font-size: 95%;
 }
 
 .article img {
+    display: block;
+    margin: 1px auto;
     width: 100%;
-    padding: 0 0.5vh 0;
-    margin-bottom: 10px;
+    height: 50%;
+    margin-bottom: 0.3%;
+  
+}
+
+.witness{
+    background-color: var(--witness-class);
+    padding: 20%;
+    color: var(--main-page-color);
+    margin: 0 0 10vh;
 }
 
 .selections {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+    padding: 0 0.5vh 0;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 10px;}
+
+.commercial img, .residential img, .institution img {
+    width: 390px;
+    height: 270px;
+    display:block;
+    margin: 5% auto 15%;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.733);
 }
-.history {
-    background-color: yellow;
-    text-align: justify;
-    padding: 2vh;
+
+.commercial h3, .residential h3, .institution h3, .history h3{
+    font-size: medium;
+    text-align: center;
 
 }
 
-
-.commercial {
-    padding: 2px;
-    margin: 2px;
-    background-color: blue;
-}
