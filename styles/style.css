@@ -10,7 +10,7 @@
     --font-family: Arial, Helvetica, sans-serif;
     --navigation-color: white;
     --links-color: black;
-    --witness-class: rgba(3, 31, 54, 0.653);
+    --witness-class: rgba(2, 35, 49, 0.836);
 
 }
 
@@ -28,8 +28,8 @@ body {
 header {
     position: sticky;
     top:0;
-    border-top: 4px solid rgba(3, 65, 157, 0.46);
-    border-bottom: 8px solid rgba(0, 0, 0, 0.376);
+    border-top: 4px solid rgba(3, 65, 157, 0.824);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.512);
 }
 
 .introduction {
@@ -42,7 +42,7 @@ header {
 .introduction img {
     width: 35%;
     height: auto;
-    margin:10px 0px 3px;
+    margin:5px 0px 3px;
 }
 
 nav {
@@ -50,10 +50,10 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--navigation-color);
-    padding: 30px;
+    padding: 15px;
 }
 
-nav a, .commercial a, .residential a, .institution a, .history a {
+nav a, .commercial a, .residential a, .institution a, .history a, .others a {
     text-decoration: none;
     color: var(--links-color);
     font-size: 95%;
@@ -78,13 +78,14 @@ nav a, .commercial a, .residential a, .institution a, .history a {
 .selections {
     display:flex;
     flex-wrap: wrap;
+    gap: 20px;
     align-content: center;
     justify-content: space-around;
     margin-bottom: 10px;
 }
 
 
-.commercial img, .residential img, .institution img {
+.commercial img, .residential img, .institution img, .others img {
     width: 390px;
     height: 270px;
     margin: 5% 0 15%;
@@ -92,7 +93,7 @@ nav a, .commercial a, .residential a, .institution a, .history a {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.545);
 }
 
-.commercial h3, .residential h3, .institution h3, .history h3{
+.commercial h3, .residential h3, .institution h3, .others h3{
     font-size: medium;
     text-align: center;
 
