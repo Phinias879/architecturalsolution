@@ -133,10 +133,13 @@ nav a, .commercial a, .residential a, .institution a, .history a, .others a, .fo
     margin: 1% 2% 2%;
     padding: 5% 3% 5%;
 }
+ .witnesses h2{
+    margin-bottom: 3%;
+ }
+
 
 .witness-1, .witness-2 {
-    margin: 1% 0 5%;
-    display: inline;
+    margin: 3% 0 5%;
 }
 
 .address {
