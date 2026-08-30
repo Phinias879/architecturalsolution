@@ -121,6 +121,7 @@ nav a, .commercial a, .residential a, .institution a, .history a, .others a, .fo
     margin: 5% 0 0%;
     border-radius: 4px;
     display: block;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.479);
 }
 
 .commercial h3, .residential h3, .institution h3, .others h3{
@@ -136,7 +137,6 @@ nav a, .commercial a, .residential a, .institution a, .history a, .others a, .fo
  .witnesses h2{
     margin-bottom: 3%;
  }
-
 
 .witness-1, .witness-2 {
     margin: 3% 0 6%;
